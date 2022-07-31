@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <form>
+                <h1>Login</h1>
+                <hr>
+                <p>Petani Cerdas</p>
+                <label for="">Username</label>
+                <input type="text" id="username" placeholder="your username">
+                <label for="">Password</label>
+                <input type="password" id="password" placeholder="password">
+                <button type="button" onclick="javascript:location.href=('home.html')">Login</button>
+                <p>
+                    <a href="#">Forgot Password?</a>
+                </p>
+            </form>
+
+            <script language="JavaScript">
+                function Login(){ 
+                    var user = document.getElementById("username").value;
+                    var pass = document.getElementById("password").value;
+            
+                    if (user=="admin" && passw=="123"){
+                        alert('Selamat anda berhasil login');
+                    }else{
+                        alert("Username dan password anda salah!");
+                    }
+                }
+            </script>
+
+        </div>
+        <div class="rigth">
+            <img style="margin-top: 30px; margin-left: 20px;" src="https://img.freepik.com/free-vector/organic-farming-with-man-field_23-2148426805.jpg?w=740&t=st=1659239589~exp=1659240189~hmac=aea210a323a1a1067fc4661f60876bc0d8de3d3786aaf3777db312c51e340bd5" height="400px" width="500px" alt="">
+         </div>
+    </div>
+
+</body>
+
+</html>
